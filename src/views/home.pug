@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/styles.css")
+        title catch mind
+    body 
+        .container
+            .login
+                form.login__form#loginForm  
+                    input(type="text" placeholder="set your nickname" required)#input
+            .game   
+            .noti#notification 
+            .chat 
+                form.chat__form#chatForm
+                    input(type="text" placeholder="write your answer" required)#chatInput
+        script.
+            window.events=!{events}
+        script(src="/socket.io/socket.io.js") 
+        script(src="/js/main.js") 

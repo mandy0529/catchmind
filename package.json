@@ -1,0 +1,41 @@
+{
+  "name": "catchmind",
+  "version": "1.0.0",
+  "description": "catchmind-practice",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js --ignore assets/ --ignore static/",
+    "gulp": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandy0529/catchmind.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mandy0529/catchmind/issues"
+  },
+  "homepage": "https://github.com/mandy0529/catchmind#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "socket.io": "^4.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.8",
+    "babelify": "^10.0.0",
+    "uglifyify": "^5.0.2",
+    "del": "^6.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-bro": "^2.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2"
+  },
+  "browsers": "['last 2 versions']"
+}

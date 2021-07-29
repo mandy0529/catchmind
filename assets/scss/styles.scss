@@ -1,0 +1,56 @@
+@import './_variable';
+@import './_reset';
+@import './login';
+@import './notification.scss';
+@import './chat.scss';
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: default;
+  box-sizing: border-box;
+  margin: 50px;
+  background-color: lightgray;
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  &.loggedOut {
+    .game,
+    .chat {
+      display: none;
+    }
+  }
+  &.loggedIn {
+    .login {
+      display: none;
+    }
+  }
+  &.loggedIn {
+    .chat {
+      display: block;
+    }
+  }
+}
+input {
+  outline: none;
+  background-color: transparent;
+  list-style: none;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  cursor: text;
+}
+button {
+  outline: none;
+  background-color: transparent;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}

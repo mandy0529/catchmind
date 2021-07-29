@@ -1,0 +1,20 @@
+.login {
+  text-align: center;
+  .login__form {
+    input {
+      width: 200px;
+      height: 50px;
+      border-radius: 10px;
+      font-size: 20px;
+      border: 5px solid teal;
+      transition: all 300ms ease-in-out;
+    }
+    input:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.game {
+  text-align: center;
+  font-size: 18px;
+}
