@@ -1,0 +1,55 @@
+canvas {
+  border-top: 50px solid salmon;
+  background-color: white;
+  box-shadow: 1px 1px 5px 5px salmon;
+  margin: 20px;
+  border-radius: 10px;
+}
+.paint {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+}
+.painting__controller {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.canvas__range {
+  display: flex;
+}
+.btn {
+  margin: 10px;
+}
+.fill__btn,
+.save__btn {
+  outline: none;
+  border: 5px solid salmon;
+  padding: 5px 15px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px 3px;
+  transition: all 300ms ease-out;
+  font-size: 20px;
+  cursor: pointer;
+  color: salmon;
+}
+button:hover {
+  transform: scale(1.1);
+  background-color: salmon;
+  color: white;
+}
+
+.color {
+  display: flex;
+}
+.jsColor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 3px;
+  cursor: pointer;
+}

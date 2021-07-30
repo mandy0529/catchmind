@@ -11,11 +11,31 @@ html(lang="en")
             .login
                 form.login__form#loginForm  
                     input(type="text" placeholder="set your nickname" required)#input
-            .game   
-            .noti#notification 
-            .chat 
+            .game__element
+                .game__noti#gameNoti
+                .paint 
+                    canvas#canvas.canvas
+                    .painting__controller  
+                        .canvas__range#colorsController
+                            .canvas__btn#canvasBtn
+                                input(type="range" class="range__control" min="0.1" max="5" step="0.1" value="2.5")#colorRange
+                                .btn
+                                    button.fill__btn#fillBtn Fill
+                                    button.save__btn#saveBtn Save
+                            .color.jsColor(style="background-color:rgb(0, 0, 0)")
+                            .color.jsColor(style="background-color:rgb(255,255,255)")
+                            .color.jsColor(style="background-color:rgb(255,59,48)")
+                            .color.jsColor(style="background-color:rgb(255,149,0)")
+                            .color.jsColor(style="background-color:rgb(255,204,0)")
+                            .color.jsColor(style="background-color:rgb(76,217,100)")
+                            .color.jsColor(style="background-color:rgb(90,200,250)")
+                            .color.jsColor(style="background-color:rgb(0,122,255)")
+                            .color.jsColor(style="background-color:rgb(88,86,214)")
+            .chat#chat
+                .user__board#userBoard
                 form.chat__form#chatForm
                     input(type="text" placeholder="write your answer" required)#chatInput
+            .noti#notification 
         script.
             window.events=!{events}
         script(src="/socket.io/socket.io.js") 

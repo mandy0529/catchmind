@@ -3,13 +3,15 @@
 @import './login';
 @import './notification.scss';
 @import './chat.scss';
+@import './paint.scss';
+@import './players.scss';
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   cursor: default;
   box-sizing: border-box;
   margin: 50px;
-  background-color: lightgray;
+  background-color: peachpuff;
   .container {
     display: flex;
     justify-content: space-around;

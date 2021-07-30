@@ -42,3 +42,15 @@
     animation-delay: 0.5s, 2s;
   }
 }
+.game__noti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  background-color: salmon;
+  height: 50px;
+  border-radius: 10px;
+}

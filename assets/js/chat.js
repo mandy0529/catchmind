@@ -1,6 +1,7 @@
 import {getSocket} from './socket';
 
 const chatForm = document.getElementById('chatForm');
+const input = document.getElementById('chatInput');
 
 const createMsg = (text, nickname) => {
   const div = document.createElement('div');
@@ -11,7 +12,6 @@ const createMsg = (text, nickname) => {
 };
 const handleSubmit = (e) => {
   e.preventDefault();
-  const input = document.getElementById('chatInput');
   const {value} = input;
   console.log(value);
   getSocket().emit(window.events.sendMsg, {message: value});
@@ -27,3 +27,9 @@ export const handleNewMessage = ({message, nickname}) => {
 if (chatForm) {
   chatForm.addEventListener('submit', handleSubmit);
 }
+export const enableChat = () => {
+  input.style.display = 'flex';
+};
+export const disableChat = () => {
+  input.style.display = 'none';
+};
